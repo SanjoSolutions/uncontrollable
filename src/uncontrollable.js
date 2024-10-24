@@ -79,6 +79,10 @@ export default function uncontrollable(Component, controlledValues, methods = []
       return nextState
     }
 
+    componentDidMount() {
+      this.unmounted = false
+    }
+
     componentWillUnmount() {
       this.unmounted = true
     }
